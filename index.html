@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header-container">
       <ul>
         <li class="left">
           <i class="uil uil-bars"></i>
@@ -30,7 +30,7 @@
         <li class="center">LOGO</li>
         <li class="right">
           <div class="form-control">
-            <input type="text" name="" id="" />
+            <input type="text" name="searchHeader" id="searchHeader" />
             <button><i class="uil uil-search"></i></button>
           </div>
         </li>
@@ -56,153 +56,129 @@
       </div>
     </nav>
 
-    <article>
-      <div class="article-content">
-        <div class="interactive-buttons">
-          <a href="" class="button">categoria</a>
-          <a href="" class="button"
-            ><i class="uil uil-message"></i>compartilhar</a
-          >
-        </div>
-        <div class="news">
-          <div class="header-news">
-            <div class="category"><span class="circle"></span>Ora, Bolas!</div>
-            <div class="title">Copa, Seleção e um torcedor reformado</div>
+    <main>
+      <article class="hero">
+        <div class="article-content">
+          <div class="interactive-buttons">
+            <a href="" class="button">categoria</a>
+            <a href="" class="button"
+              ><i class="uil uil-message"></i>compartilhar</a
+            >
           </div>
-          <div class="others-news">
-            <ul>
-              <li>
-                <div class="other-new">
-                  <div class="category">Ora, Bolas!</div>
-                  <div class="other-new-body">
-                    o que abre e o que fecha em dia de jogo do Brasil na Copa?
-                    Confira!
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="other-new">
-                  <div class="category">Ora, Bolas!</div>
-                  <div class="other-new-body">
-                    Copa do mundo no Qatar começa com grandes apostas para
-                    anfitriões
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="other-new">
-                  <div class="category">Ora, Bolas!</div>
-                  <div class="other-new-body">
-                    Com Ronaldo sob pressão, Portugal é protagonista do Grupo H
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="other-new">
-                  <div class="category">Ora, Bolas!</div>
-                  <div class="other-new-body">
-                    Brasil Enfrentará equipe forte da Sérvia em estreia no Qatar
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <section class="container">
-      <div class="header-content">
-        <div class="left">
-          <div class="card">
-            <div class="interactive-buttons">
-              <a href="" class="button">categoria</a>
-              <a href="" class="button"
-                ><i class="uil uil-message"></i>compartilhar</a
-              >
-            </div>
-            <img src="./Assets/vacina_2_ic_1.jpg" />
-            <div class="text">
-              <div class="text-category">
-                <span class="circle"></span> Vacinação
-              </div>
-              <div class="text-body">
-                São paulo começa a aplicar a 4º dose da vacina contra covid-19
-                em maiores de 30 anos
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="right">
-          <div class="card">
-            <div class="interactive-buttons">
-              <a href="" class="button">categoria</a>
-              <a href="" class="button"
-                ><i class="uil uil-message"></i>compartilhar</a
-              >
-            </div>
-            <img src="./Assets/vacina_2_ic_1.jpg" alt="" />
-            <div class="text">
-              <div class="text-category"><span class="circle"></span>Metrô</div>
-              <div class="text-body">
-                Tatuzão voltará a escavar nova linha de metrô seis meses após
-                cratera abrir
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="main-content">
-        <div class="left">
           <div class="news">
-            <div class="news-left">
-              <div>
-                <div class="category">categoria</div>
-                <div class="body">
-                  Luana Piovani compartilha novo projeto com seguidores: ‘Tão
-                  feliz
-                </div>
+            <div class="header-news">
+              <div class="category">
+                <span class="circle"></span>Ora, Bolas!
               </div>
-              <div>
-                <div class="category">categoria</div>
-                <div class="body">
-                  Estreias do Amazon Prime Video em julho incluem ‘Casa Gucci’ e
-                  ‘Spencer’
-                </div>
+              <div class="title">Copa, Seleção e um torcedor reformado</div>
+            </div>
+            <div class="others-news">
+              <ul>
+                <li>
+                  <div class="other-new">
+                    <div class="category">Ora, Bolas!</div>
+                    <div class="other-new-body">
+                      o que abre e o que fecha em dia de jogo do Brasil na Copa?
+                      Confira!
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="other-new">
+                    <div class="category">Ora, Bolas!</div>
+                    <div class="other-new-body">
+                      Copa do mundo no Qatar começa com grandes apostas para
+                      anfitriões
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="other-new">
+                    <div class="category">Ora, Bolas!</div>
+                    <div class="other-new-body">
+                      Com Ronaldo sob pressão, Portugal é protagonista do Grupo
+                      H
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="other-new">
+                    <div class="category">Ora, Bolas!</div>
+                    <div class="other-new-body">
+                      Brasil Enfrentará equipe forte da Sérvia em estreia no
+                      Qatar
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="container first-news">
+        <div class="header-content">
+          <div class="left">
+            <div class="card">
+              <div class="interactive-buttons">
+                <a href="" class="button">categoria</a>
+                <a href="" class="button"
+                  ><i class="uil uil-message"></i>compartilhar</a
+                >
               </div>
-              <div>
-                <div class="category">categoria</div>
-                <div class="body">
-                  Cinemateca exibe versão restaurada de Deus e o Diabo na Terra
-                  do So
+              <img src="./Assets/vacina_2_ic_1.jpg" alt="imagemCarousel" />
+              <div class="text">
+                <div class="text-category">
+                  <span class="circle"></span> Vacinação
+                </div>
+                <div class="text-body">
+                  São paulo começa a aplicar a 4º dose da vacina contra covid-19
+                  em maiores de 30 anos
                 </div>
               </div>
             </div>
-            <div class="news-right">
-              <div class="card">
-                <img src="./Assets/luanaPiovani.jpg" alt="" />
-                <div class="card-text">
+          </div>
+          <div class="right">
+            <div class="card">
+              <div class="interactive-buttons">
+                <a href="" class="button">categoria</a>
+                <a href="" class="button"
+                  ><i class="uil uil-message"></i>compartilhar</a
+                >
+              </div>
+              <img src="./Assets/vacina_2_ic_1.jpg" alt="" />
+              <div class="text">
+                <div class="text-category">
+                  <span class="circle"></span>Metrô
+                </div>
+                <div class="text-body">
+                  Tatuzão voltará a escavar nova linha de metrô seis meses após
+                  cratera abrir
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="left">
+            <div class="news">
+              <div class="news-left">
+                <div>
                   <div class="category">categoria</div>
                   <div class="body">
                     Luana Piovani compartilha novo projeto com seguidores: ‘Tão
                     feliz
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/luanaPiovani.jpg" alt="" />
-                <div class="card-text">
+                <div>
                   <div class="category">categoria</div>
                   <div class="body">
                     Estreias do Amazon Prime Video em julho incluem ‘Casa Gucci’
                     e ‘Spencer’
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./Assets/luanaPiovani.jpg" alt="" />
-                <div class="card-text">
+                <div>
                   <div class="category">categoria</div>
                   <div class="body">
                     Cinemateca exibe versão restaurada de Deus e o Diabo na
@@ -210,97 +186,358 @@
                   </div>
                 </div>
               </div>
+              <div class="news-right">
+                <div class="card">
+                  <img src="./Assets/luanaPiovani.jpg" alt="" />
+                  <div class="card-text">
+                    <div class="category">categoria</div>
+                    <div class="body">
+                      Luana Piovani compartilha novo projeto com seguidores:
+                      ‘Tão feliz
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Assets/luanaPiovani.jpg" alt="" />
+                  <div class="card-text">
+                    <div class="category">categoria</div>
+                    <div class="body">
+                      Estreias do Amazon Prime Video em julho incluem ‘Casa
+                      Gucci’ e ‘Spencer’
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Assets/luanaPiovani.jpg" alt="" />
+                  <div class="card-text">
+                    <div class="category">categoria</div>
+                    <div class="body">
+                      Cinemateca exibe versão restaurada de Deus e o Diabo na
+                      Terra do So
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="timming-cards">
+              <div class="main-card">
+                <div class="head-card">
+                  <div class="country">Lotomania</div>
+                  <div class="infos">Concurso 2336 (08/07/22)</div>
+                </div>
+
+                <div class="body-card">
+                  <ul>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                    <li>00</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sub-card">
+                <div class="location">
+                  <div class="city">SP - São Paulo</div>
+                  <div class="day">terça feira 15:00</div>
+                </div>
+                <div class="infos">
+                  <div class="cloud">
+                    <img src="./Assets/cloud.png" alt="" />
+                  </div>
+                  <div class="infos-text">
+                    <div class="station">Ensolarado</div>
+                    <div class="temperature">24ºC</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-aside">
+              <div class="card">
+                <div class="category">categoria</div>
+                <div class="body">
+                  Luana Piovani compartilha novo projeto com seguidores: ‘Tão
+                  feliz
+                </div>
+              </div>
+              <div class="card">
+                <div class="category">categoria</div>
+                <div class="body">
+                  Luana Piovani compartilha novo projeto com seguidores: ‘Tão
+                  feliz
+                </div>
+              </div>
+              <div class="card">
+                <div class="category">categoria</div>
+                <div class="body">
+                  Luana Piovani compartilha novo projeto com seguidores: ‘Tão
+                  feliz
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="right">
-          <div class="timming-cards">
+        <div class="ads">
+          <img src="./Assets/ads.png" alt="ads" />
+        </div>
+      </section>
 
-            <div class="main-card">
-
-              <div class="head-card">
-                <div class="country">Lotomania</div>
-                <div class="infos">Concurso 2336 (08/07/22)</div>
-              </div>
-
-              <div class="body-card">
-                <ul>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                  <li>00</li>
-                </ul>
-              </div>
-
+      <section class="container videos">
+        <div class="header-content">
+          <div class="logo">LOGO</div>
+          <div class="buttons">
+            <button class="active">vídeos</button>
+            <button>shorts</button>
+          </div>
+        </div>
+        <div class="videos-cards">
+          <div class="card">
+            <div class="img-card">
+              <button class="play"><i class="uil uil-play"></i></button>
+              <img src="./Assets/arquitetura.jpg" alt="" />
             </div>
-
-            <div class="sub-card">
-              <div class="location">
-                <div class="city">
-                  SP - São Paulo
-                </div>
-                <div class="day">
-                  terça feira 15:00
-                </div>
-              </div>
-              <div class="infos">
-                <div class="cloud">
-                  <img src="./Assets/cloud.png" alt="">
-                </div>
-                <div class="infos-text">
-                  <div class="station">
-                    Ensolarado
-                  </div>
-                  <div class="temperature">
-                    24ºC 
-                  </div>
-                </div>
-                
-              </div>
+            <div class="text-card">
+              Lei Proibé arquitetura no Brasil - orbi na band
             </div>
           </div>
-          <div class="news-aside">
-            <div class="card">
-              <div class="category">categoria</div>
-              <div class="body">
-                Luana Piovani compartilha novo projeto com seguidores: ‘Tão
-                feliz
-              </div>
+          <div class="card">
+            <div class="img-card">
+              <button class="play"><i class="uil uil-play"></i></button>
+              <img src="./Assets/arquitetura.jpg" alt="" />
             </div>
-            <div class="card">
-              <div class="category">categoria</div>
-              <div class="body">
-                Luana Piovani compartilha novo projeto com seguidores: ‘Tão
-                feliz
-              </div>
+            <div class="text-card">
+              Lei Proibé arquitetura no Brasil - orbi na band
             </div>
-            <div class="card">
-              <div class="category">categoria</div>
-              <div class="body">
-                Luana Piovani compartilha novo projeto com seguidores: ‘Tão
-                feliz
-              </div>
+          </div>
+          <div class="card">
+            <div class="img-card">
+              <button class="play"><i class="uil uil-play"></i></button>
+              <img src="./Assets/arquitetura.jpg" alt="" />
+            </div>
+            <div class="text-card">
+              Lei Proibé arquitetura no Brasil - orbi na band
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="channel">
+          <div class="logo"><img src="./Assets/youtube.png" alt="" /></div>
+          <div class="text">Inscreva-se no nosso canal</div>
+        </div>
+      </section>
+
+      <section class="container second-news">
+        <article class="more-reads">
+          <div class="title">+lidas</div>
+          <ul>
+            <li>
+              <div class="number">1</div>
+              <div class="text">
+                Estreias da amazon Prime video em julho incluem 'casa gucci' e
+                'spencer'
+              </div>
+            </li>
+            <li>
+              <div class="number">2</div>
+              <div class="text">
+                Estreias da amazon Prime video em julho incluem 'casa gucci' e
+                'spencer'
+              </div>
+            </li>
+            <li>
+              <div class="number">3</div>
+              <div class="text">
+                Estreias da amazon Prime video em julho incluem 'casa gucci' e
+                'spencer'
+              </div>
+            </li>
+            <li>
+              <div class="number">4</div>
+              <div class="text">
+                Estreias da amazon Prime video em julho incluem 'casa gucci' e
+                'spencer'
+              </div>
+            </li>
+            <li>
+              <div class="number">5</div>
+              <div class="text">
+                Estreias da amazon Prime video em julho incluem 'casa gucci' e
+                'spencer'
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="news-card">
+          <div class="card">
+            <div class="img-card">
+              <img src="./Assets/messi-argentina.jpg" alt="imagem-card" />
+            </div>
+            <div class="text-card">
+              <div class="category">
+                <span class="circle"></span>copa qatar 2022
+              </div>
+              <div class="body">
+                Sem Cano, Messi lidera a lista da Argentina para Copa 2022
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-card">
+              <img src="./Assets/messi-argentina.jpg" alt="iamgem-card" />
+            </div>
+            <div class="text-card">
+              <div class="category">
+                <span class="circle"></span>copa qatar 2022
+              </div>
+              <div class="body">
+                Sem Cano, Messi lidera a lista da Argentina para Copa 2022
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-card">
+              <img src="./Assets/messi-argentina.jpg" alt="imagem-card" />
+            </div>
+            <div class="text-card">
+              <div class="category">
+                <span class="circle"></span>copa qatar 2022
+              </div>
+              <div class="body">
+                Sem Cano, Messi lidera a lista da Argentina para Copa 2022
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-card">
+              <img src="./Assets/messi-argentina.jpg" alt="" />
+              <div class="text-card">
+                <div class="category">
+                  <span class="circle"></span>copa qatar 2022
+                </div>
+                <div class="body">
+                  Sem Cano, Messi lidera a lista da Argentina para Copa 2022
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="columns-form">
+          <div class="column">
+            <h3 class="column-title">colunas</h3>
+            <ul>
+              <li>
+                <div class="card">
+                  <div class="img-card">
+                    <img
+                      src="./Assets/primevideo-seo-logo.png"
+                      alt="imagem-card"
+                    />
+                  </div>
+                  <div class="body-card">
+                    <div class="title">#RadarLelê</div>
+                    <div class="body">
+                      Estreias do Amazon Prime Video em julho incluem ‘Casa
+                      Gucci’ e ‘Spencer’
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-card">
+                    <img
+                      src="./Assets/primevideo-seo-logo.png"
+                      alt="imagem-card"
+                    />
+                  </div>
+                  <div class="body-card">
+                    <div class="title">#RadarLelê</div>
+                    <div class="body">
+                      Estreias do Amazon Prime Video em julho incluem ‘Casa
+                      Gucci’ e ‘Spencer’
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-card">
+                    <img
+                      src="./Assets/primevideo-seo-logo.png"
+                      alt="imagem-card"
+                    />
+                  </div>
+                  <div class="body-card">
+                    <div class="title">#RadarLelê</div>
+                    <div class="body">
+                      Estreias do Amazon Prime Video em julho incluem ‘Casa
+                      Gucci’ e ‘Spencer’
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-card">
+                    <img
+                      src="./Assets/primevideo-seo-logo.png"
+                      alt="imagem-card"
+                    />
+                  </div>
+                  <div class="body-card">
+                    <div class="title">#RadarLelê</div>
+                    <div class="body">
+                      Estreias do Amazon Prime Video em julho incluem ‘Casa
+                      Gucci’ e ‘Spencer’
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ads"><img src="./Assets/ads-2.jpg" alt="ads" /></div>
+          <form class="form">
+            <div class="form-header">
+              <div class="form-category">Newsletter</div>
+              <div class="form-title">Orbi e tal</div>
+              <div class="form-subtitle">
+                Receba a seleção de notícias feita pelos nossos editores. De
+                segunda a sexta-feira, sempre bem cedinho!
+              </div>
+            </div>
+            <div class="form-body">
+              <div class="form-control">
+                <input type="text" name="input" id="newsletterInputWhatsapp" placeholder="Digite seu Whatsapp com DDD">
+              </div>
+              <span>ou</span>
+              <div class="form-control">
+                <input type="text" name="input" id="newsletterInputEmail" placeholder="Digite seu e-mail">
+              </div>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./script.js"></script>
