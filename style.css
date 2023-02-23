@@ -176,31 +176,68 @@ nav .navbar-content {
   border-bottom: 2px solid var(--primary-color);
 }
 
-article.hero {
+.hero {
   position: relative;
   margin-top: 15px;
   width: 100vw;
-  height: 65vh;
-  background: linear-gradient(
-      to bottom,
-      transparent 20%,
-      rgba(0, 0, 0, 0.819) 100%
-    ),
-    url(./Assets/r692550_1296x729_16-9.jpg);
-  background-size: cover;
-  background-repeat: none;
-  background-position: center bottom;
+  height: 60vh;
 }
 
-.article-content {
-  padding: 20px 65px;
+.hero .article-content{
   width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 60px;
 }
 
-.interactive-buttons {
+.hero .news{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+ 
+}
+
+.hero .img-hero{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  z-index: -1;
+}
+
+.hero .img-hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 60%, var(--black-color));
+  z-index: 1;
+}
+
+article.hero .img-hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+
+article.hero .article-content > .interactive-buttons.hero {
+  position: absolute;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: row;
+  width: 95%;
+  top: 0;
+}
+
+article.hero .article-content > .interactive-buttons.hero .button{
+  width: 70px;
+  height: 20px;
 }
 
 .interactive-buttons a {
@@ -228,15 +265,11 @@ article.hero {
   margin-right: 5px;
 }
 
-.article-content .news {
-  position: absolute;
-  bottom: 20px;
-  left: 60px;
-  color: var(--white-color) !important;
-}
+
 
 .header-news {
   margin-bottom: 20px;
+  color: var(--white-color);
 }
 
 .category {
@@ -266,6 +299,7 @@ article.hero {
 
 .others-news {
   width: 100%;
+  color: var(--white-color);
 }
 
 .others-news ul {
@@ -388,9 +422,14 @@ article.hero {
 .card > .interactive-buttons {
   position: absolute;
   width: 95%;
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
 }
-
+.card > .interactive-buttons .button{
+  width: 70px;
+  height: 15px;
+}
 .main-content {
   margin-top: 20px;
   width: 100%;
@@ -1887,6 +1926,8 @@ form{
 
   width: 100%;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   z-index: 2;
 }
