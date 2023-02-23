@@ -758,6 +758,7 @@ section.second-news .more-reads .title {
 }
 
 section.second-news .news-card {
+  position: relative;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
@@ -778,14 +779,26 @@ section.second-news .news-card .img-card {
   height: 100%;
 }
 
-section.second-news .news-card .img-card::before{
-  content: '';
+section.second-news .news-card .interactive-buttons {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.second-news .news-card .interactive-buttons a.button {
+  margin: 10px 10px;
+  height: 10px;
+}
+
+section.second-news .news-card .img-card::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 50%,black 100%);
+  background: linear-gradient(to bottom, transparent 50%, black 100%);
   border-radius: var(--border-radius-1);
 }
 
@@ -802,35 +815,32 @@ section.second-news .news-card .text-card {
   color: var(--white-color);
 }
 
-section.second-news .news-card .category{
+section.second-news .news-card .category {
   color: var(--white-color);
   font-weight: 400;
 }
 
-section.second-news .text-card .body{
+section.second-news .text-card .body {
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-section.second-news .columns-form{
+section.second-news .columns-form {
   margin-top: 20px;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   gap: 20px;
-
 }
 
-section.second-news .columns-form .column{
-  
+section.second-news .columns-form .column {
   width: 100%;
   height: 100%;
-  
 }
 
-section.second-news .columns-form .column-title{
+section.second-news .columns-form .column-title {
   padding: 10px;
   text-transform: uppercase;
   font-weight: 900;
@@ -838,42 +848,40 @@ section.second-news .columns-form .column-title{
   font-size: 1.5rem;
 }
 
-section.second-news .columns-form .card{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
+section.second-news .columns-form .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
 }
 
-
-
-section.second-news .columns-form ul{
+section.second-news .columns-form ul {
   list-style: none;
 }
 
-section.second-news .columns-form .card img{
+section.second-news .columns-form .card img {
   width: 65px;
   height: 65px;
   border-radius: var(--border-radius-2);
 }
 
-section.second-news .card .body-card{
+section.second-news .card .body-card {
   padding-left: 10px;
 }
 
-section.second-news .body-card .title{
+section.second-news .body-card .title {
   color: var(--black-color);
   font-weight: 700;
   padding-bottom: 5px;
 }
 
-section.second-news .body-card .body{
+section.second-news .body-card .body {
   color: var(--black-color);
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-section.second-news .ads{
+section.second-news .ads {
   width: 100%;
   height: 100%;
   background: var(--grey-color-2);
@@ -883,49 +891,44 @@ section.second-news .ads{
   align-items: center;
 }
 
-section.second-news .ads img{
+section.second-news .ads img {
   width: 100%;
   padding: 50px;
 }
 
-section.second-news .form{
-  
+section.second-news .form {
   width: 100%;
   height: 100%;
-
 }
 
-section.second-news form{
+section.second-news form {
   background: var(--white-color-2);
   border-radius: var(--border-radius-1);
-  
 }
 
-section.second-news .form .form-header{
+section.second-news .form .form-header {
   padding: 20px;
 }
 
-section.second-news .form .form-category{
+section.second-news .form .form-category {
   color: var(--primary-color);
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 10px;
-
 }
 
-section.second-news .form .form-title{
+section.second-news .form .form-title {
   font-size: 2rem;
   font-weight: 800;
   color: var(--black-color);
   margin-bottom: 10px;
 }
 
-section.second-news .form .form-subtitle{
+section.second-news .form .form-subtitle {
   color: var(--black-color);
 }
 
-
-section.second-news .form .form-body{
+section.second-news .form .form-body {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -943,7 +946,7 @@ section.second-news .form .form-control {
   box-shadow: var(--box-shadow-1);
 }
 
-section.second-news .form .form-control input{
+section.second-news .form .form-control input {
   background: transparent;
   outline: none;
   border: none;
@@ -951,13 +954,13 @@ section.second-news .form .form-control input{
   height: 100%;
 }
 
-section.second-news .form  span{
+section.second-news .form span {
   font-size: 1.3rem;
   color: var(--black-color);
   font-weight: 600;
 }
 
-section.second-news .form .form-control button{
+section.second-news .form .form-control button {
   border: 1px solid var(--white-color);
   width: 35px;
   height: 35px;
@@ -967,24 +970,113 @@ section.second-news .form .form-control button{
   color: var(--white-color);
 }
 
-section.second-news .form span.sucess{
+section.second-news .form span.sucess {
   margin-top: 10px;
   color: var(--primary-color);
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-section.second-news .form .card .img-card{
+section.second-news .form .card .img-card {
   margin-right: 10px;
 }
 
-section.second-news .form .card .img-card img{
+section.second-news .form .card .img-card img {
   width: 75px;
   height: 75px;
   border-radius: var(--border-radius-1);
 }
 
-section.second-news .form .card .body{
+section.second-news .form .card .body {
   color: var(--black-color);
   font-size: 0.8rem;
+}
+
+.horoscopo {
+  margin: 20px;
+  width: 95%;
+  background: var(--white-color-1);
+  box-shadow: var(--box-shadow-1);
+  padding: 20px;
+}
+
+.horoscopo .head-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horoscopo .head-content .title {
+  color: var(--black-color);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.horoscopo .main-content {
+  margin-top: 0px 30px;
+  width: 100%;
+  display: flex;
+  
+}
+
+.horoscopo .main-content ul {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px,1fr));;
+  place-items: center;
+
+}
+
+.horoscopo .main-content ul li {
+  width: 100%;
+  
+}
+
+.horoscopo .main-content .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.horoscopo .main-content .icon .img{
+  display: flex;
+  justify-content: center;
+}
+
+.horoscopo .main-content .icon img {
+  width: 50px;
+  filter: invert(21%) sepia(91%) saturate(5554%) hue-rotate(327deg)
+    brightness(98%) contrast(105%);
+}
+
+.third-news .head-content{
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.third-news .body-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 10px;
+}
+
+.third-news .column-title{
+  padding: 20px;
+}
+
+.third-news ul{
+  list-style: none;
+}
+
+
+
+.third-news .news .card{
+  display: flex;
+  flex-direction: column;
 }
