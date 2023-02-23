@@ -213,7 +213,7 @@ nav .navbar-content {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 60%, var(--black-color));
+  background: linear-gradient(to bottom, transparent 70%, var(--black-color));
   z-index: 1;
 }
 
@@ -434,7 +434,7 @@ article.hero .article-content > .interactive-buttons.hero .button{
   margin-top: 20px;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
 }
 
 .main-content .left {
@@ -534,7 +534,7 @@ article.hero .article-content > .interactive-buttons.hero .button{
 .main-card .body-card ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, minmax(25px, 1fr));
   gap: 5px;
   margin-bottom: 20px;
 }
@@ -1978,7 +1978,12 @@ form{
   border-radius: var(--border-radius-1);
 }
 
-.container.five-news button.load{
+ button.load{
+  position: relative;
+  top: 25px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 30px;
   margin-bottom: 50px;
   width: 200px;
@@ -1986,7 +1991,6 @@ form{
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
   border: 1px solid var(--primary-color);
   background: transparent;
   border-radius: var(--border-radius-1);
@@ -1997,6 +2001,7 @@ form{
 
 
 footer{
+  margin-top: 50px;
   width: 100vw;
   min-height: 30vh;
   background: var(--white-color-2);
