@@ -86,6 +86,12 @@ ul li.left .button {
   align-items: center;
 }
 
+.button,
+button,
+.play-button i{
+  cursor: pointer;
+}
+
 ul li.left .button i {
   font-size: 1.3rem;
   margin-right: 10px;
@@ -541,7 +547,6 @@ article.hero {
 
 .sub-card .cloud img {
   width: 80px;
-  
 }
 
 .sub-card .infos-text {
@@ -575,7 +580,7 @@ article.hero {
   width: 90%;
 }
 
- .ads {
+.ads {
   margin-top: 20px;
   width: 88%;
   height: 200px;
@@ -586,7 +591,7 @@ article.hero {
   align-items: center;
 }
 
- .ads img {
+.ads img {
   width: 60%;
   height: auto;
 }
@@ -869,7 +874,7 @@ section.second-news .columns-form .card img {
   width: 65px;
   height: 65px;
   border-radius: var(--border-radius-2);
-  object-fit:cover;
+  object-fit: cover;
 }
 
 section.second-news .card .body-card {
@@ -1025,31 +1030,28 @@ section.second-news .form .card .body {
   margin-top: 0px 30px;
   width: 100%;
   display: flex;
-  
 }
 
 .horoscopo .main-content ul {
   width: 100%;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px,1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   place-items: center;
-
 }
 
 .horoscopo .main-content ul li {
   width: 100%;
-  
 }
 
 .horoscopo .main-content .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
-.horoscopo .main-content .icon .img{
+.horoscopo .main-content .icon .img {
   display: flex;
   justify-content: center;
 }
@@ -1060,54 +1062,49 @@ section.second-news .form .card .body {
     brightness(98%) contrast(105%);
 }
 
-.third-news{
+.third-news {
   padding: 20px;
 }
 
-.third-news .head-content{
+.third-news .head-content {
   color: var(--black-color);
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-.third-news .body-content{
+.third-news .body-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
 }
 
-
-.third-news .column-title{
+.third-news .column-title {
   padding: 20px 0px;
 }
 
-.third-news ul{
+.third-news ul {
   list-style: none;
 }
 
-
-
-.third-news .news .card{
+.third-news .news .card {
   display: flex;
   flex-direction: column;
 }
 
-.third-news .card-news{
+.third-news .card-news {
   position: relative;
   height: 100%;
-  
 }
 
-.third-news .card-news .img-card{
+.third-news .card-news .img-card {
   position: relative;
   height: 100%;
   width: 100%;
- 
 }
 
-.third-news .card-news .img-card::before{
-  content: '';
+.third-news .card-news .img-card::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1118,48 +1115,45 @@ section.second-news .form .card .body {
   border-radius: var(--border-radius-1);
 }
 
-.third-news .card-news .img-card img{
+.third-news .card-news .img-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-radius-1);
 }
 
-.third-news .card-news .interactive-buttons{
+.third-news .card-news .interactive-buttons {
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 10px;
   z-index: 2;
-
 }
 
-.third-news .card-news .interactive-buttons .button{
- margin: 0px 20px;
+.third-news .card-news .interactive-buttons .button {
+  margin: 0px 20px;
 }
 
-
-
-.third-news .card-news .text-card{
+.third-news .card-news .text-card {
   position: absolute;
   bottom: 0;
   z-index: 2;
   padding: 20px;
 }
 
-.third-news .card-news .text-card .category{
+.third-news .card-news .text-card .category {
   text-transform: uppercase;
   color: var(--white-color);
   font-weight: 400;
 }
 
-.third-news .card-news .text-card .body{
+.third-news .card-news .text-card .body {
   color: var(--white-color);
   font-weight: 500;
 }
 
-.third-news .second-news .card{
+.third-news .second-news .card {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1170,36 +1164,33 @@ section.second-news .form .card .body {
   align-items: center;
 }
 
-.third-news .second-news .img-card{
- 
+.third-news .second-news .img-card {
   width: 500px;
   height: 125px;
 }
 
-.third-news .second-news .img-card img{
+.third-news .second-news .img-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
 
-.third-news > .ads{
+.third-news > .ads {
   margin-top: 30px;
 }
 
 .third-news > .ads img {
-  width: 60%!important;
+  width: 60% !important;
   height: auto;
 }
 
-
-.second-videos{
+.second-videos {
   background: var(--primary-color);
   min-height: max-content;
-  
 }
 
-.second-videos .header-content{
+.second-videos .header-content {
   padding: 20px;
   width: 84%;
   height: max-content;
@@ -1209,49 +1200,48 @@ section.second-news .form .card .body {
   color: var(--white-color);
 }
 
-.second-videos .header-content .logo{
+.second-videos .header-content .logo {
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.second-videos .header-content ul{
+.second-videos .header-content ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap:30px;
+  gap: 30px;
 }
 
-.second-videos .header-content ul li{
+.second-videos .header-content ul li {
   font-weight: 300;
 }
 
-.second-videos .header-content ul li::first-letter{
+.second-videos .header-content ul li::first-letter {
   text-transform: uppercase;
 }
 
-.second-videos .body-content{
+.second-videos .body-content {
   width: 87%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px;
-  
 }
 
-.second-videos .body-content .left{
+.second-videos .body-content .left {
   width: 100%;
   height: 100%;
 }
 
-.second-videos .body-content  .img-card{
+.second-videos .body-content .img-card {
   position: relative;
   width: max-content;
-  height: 100%;
+  height: max-content;
 }
 
-.second-videos .body-content .left .img-card::after{
-  content: '';
+.second-videos .body-content .left .img-card::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1261,32 +1251,28 @@ section.second-news .form .card .body {
   border-radius: var(--border-radius-1);
 }
 
-.second-videos .body-content .left .body{
+.second-videos .body-content .left .body {
   width: 100%;
   height: 100%;
   position: absolute;
-
- 
 }
 
-.second-videos .body-content .left img{
+.second-videos .body-content .left img {
   width: 40vw;
-  height: 45vh;
+
   border-radius: var(--border-radius-1);
   object-fit: cover;
 }
 
-.second-videos .body-content .left .text-video{
+.second-videos .body-content .left .text-video {
   position: absolute;
   bottom: 0;
   color: var(--white-color);
   padding: 20px;
   font-weight: 600;
- 
 }
 
-
-.second-videos .body-content .right{
+.second-videos .body-content .right {
   position: relative;
   justify-content: center;
   width: 66%;
@@ -1294,39 +1280,38 @@ section.second-news .form .card .body {
   border-radius: var(--border-radius-1);
 }
 
-.second-videos .body-content .right .title{
+.second-videos .body-content .right .title {
   width: 100%;
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--white-color);  
+  color: var(--white-color);
   padding: 20px 0;
   text-transform: uppercase;
   padding-left: 20px;
 }
 
-.second-videos .body-content  .videos-cards{
+.second-videos .body-content .videos-cards {
   width: 100%;
   height: max-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:10px;
+  gap: 10px;
   padding-left: 20px;
-  
 }
 
-.second-videos .body-content .videos-cards .card{
+.second-videos .body-content .videos-cards .card {
   position: relative;
   width: max-content;
   height: max-content;
 }
 
-.second-videos .right .videos-cards .img-card{
+.second-videos .right .videos-cards .img-card {
   width: 100%;
-  position: relative; 
+  position: relative;
 }
 
-.second-videos .right .videos-cards .img-card::before{
-  content: '';
+.second-videos .right .videos-cards .img-card::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1337,50 +1322,44 @@ section.second-news .form .card .body {
   opacity: 0.9;
 }
 
-.second-videos .right .videos-cards img{
+.second-videos .right .videos-cards img {
   width: 21vw;
-  height: 15vh;
+  height: 18vh;
   border-radius: var(--border-radius-1);
   object-fit: cover;
 }
 
-.second-videos .card .body{
+.second-videos .card .body {
   width: 100%;
-  height: 100%;
+  height: max-content;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
- 
 }
 
-.second-videos  .card .body .play-button{
-  
+.second-videos .card .body .play-button {
   padding: 10px;
-
 }
 
-.second-videos  .card .body .play-button i{
+.second-videos .card .body .play-button i {
   background: var(--white-color);
   color: var(--primary-color);
-  padding: 3px  5px;
+  padding: 3px 5px;
   border-radius: 50%;
   font-weight: 800;
   box-shadow: var(--box-shadow-1);
- 
- 
 }
 
-.second-videos .right  .card .body .text-video{
+.second-videos .right .card .body .text-video {
   width: 90%;
-  height: 100%;
+  height: max-content;
   position: absolute;
+
   color: var(--white-color);
   font-size: 0.8rem;
   padding: 10px;
 }
-
-
 
 .news-football {
   width: 88%;
@@ -1391,13 +1370,12 @@ section.second-news .form .card .body {
   place-items: center;
 }
 
-.news-football .ads{
+.news-football .ads {
   width: 100%;
   height: 100%;
-  padding: 20px 0px;
 }
 
-.news-football .news{
+.news-football .news {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1407,60 +1385,50 @@ section.second-news .form .card .body {
   margin-left: 50px;
 }
 
-
-.news-football .news .card{
+.news-football .news .card {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(2,.1fr 1fr);
+  grid-template-columns: repeat(2, 0.1fr 1fr);
   place-items: center;
- justify-content: center;
+  justify-content: center;
   gap: 10px;
 }
 
-
-
-
-
-.news-football .news .card img{
-  width:100px;
+.news-football .news .card img {
+  width: 100px;
   height: 100px;
 }
 
-.football-gadget{
+.football-gadget {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: var(--white-color-2);
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow-1);
 }
 
-
-
-
-.news-football .football-gadget .head-content{
+.news-football .football-gadget .head-content {
   margin: 20px 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  
 }
 
-.football-gadget .head-content img{
+.football-gadget .head-content img {
   width: 80px;
 }
 
-.news-football .football-gadget .body-content{
- width: 100%;
- height: 100%;
- 
+.news-football .football-gadget .body-content {
+  width: 100%;
+  height: 100%;
 }
 
-
-.football-gadget  .group{
+.football-gadget .group {
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
@@ -1470,25 +1438,23 @@ section.second-news .form .card .body {
   gap: 20px;
 }
 
-.football-gadget  .group span{
+.football-gadget .group span {
   font-weight: 500;
   color: var(--primary-color);
   font-size: 1rem;
 }
 
-.football-gadget  .group span.disabled{
+.football-gadget .group span.disabled {
   color: var(--grey-color);
 }
 
-
-.football-gadget .group .group-name{
+.football-gadget .group .group-name {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--black-color);
 }
 
-
-.football-gadget .scoreboard{
+.football-gadget .scoreboard {
   width: 100%;
   padding-left: 15px;
   display: grid;
@@ -1505,7 +1471,8 @@ section.second-news .form .card .body {
   gap: 10px;
 }
 
-.football-gadget .scoreboard .home-team, .football-gadget .scoreboard .away-team{
+.football-gadget .scoreboard .home-team,
+.football-gadget .scoreboard .away-team {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1513,38 +1480,448 @@ section.second-news .form .card .body {
   gap: 10px;
 }
 
-.football-gadget .scoreboard .team-name{
+.football-gadget .scoreboard .team-name {
   text-transform: uppercase;
   color: var(--black-color);
   font-weight: 400;
 }
 
-
-
-.football-gadget .scoreboard  .home-team, .football-gadget .scoreboard .away-team{
+.football-gadget .scoreboard .home-team,
+.football-gadget .scoreboard .away-team {
   color: var(--black-color);
   font-weight: 800;
   font-size: 1.1rem;
 }
 
-
-
-
-
-
-.football-gadget .scoreboard .team-image img{
+.football-gadget .scoreboard .team-image img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: .1px solid var(--black-color);
+  border: 0.1px solid var(--black-color);
   object-fit: cover;
-  
 }
 
-.football-gadget .time{
+.football-gadget .time {
   margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
   font-size: 0.8rem;
+}
+
+.cartoon-horoscopo {
+  margin-top: 50px;
+  width: 88%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cartoon-horoscopo .cartoon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--grey-color-2);
+  border-radius: var(--border-radius-1);
+}
+
+.cartoon .title {
+  padding: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--black-color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cartoon-horoscopo .cartoon .img-cartoon {
+  padding: 0px 30px;
+}
+
+.cartoon-horoscopo .cartoon img {
+  width: 100%;
+}
+
+.cartoon-horoscopo .cartoon .nav {
+  margin: 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartoon-horoscopo .cartoon .nav span {
+  font-family: var(--font-family);
+  font-weight: 600;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black-color);
+  box-shadow: 0px 7px 20px -5px var(--black-color);
+}
+
+.cartoon-horoscopo .nav .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartoon-horoscopo .nav .infos .name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--black-color);
+}
+
+.cartoon-horoscopo .nav .infos .creator {
+  margin-top: 5px;
+}
+
+.cartoon-horoscopo .jornal {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #5b4797, #f20f6f);
+  border-radius: var(--border-radius-1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cartoon-horoscopo .jornal .title {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.cartoon-horoscopo .jornal .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.cartoon-horoscopo .jornal img {
+  width: 70%;
+}
+
+.cartoon-horoscopo .second-horoscopo {
+  width: 100%;
+}
+
+.cartoon-horoscopo .second-horoscopo .head-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartoon-horoscopo .second-horoscopo .title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--black-color);
+  margin-bottom: 10px;
+}
+
+.cartoon-horoscopo .second-horoscopo .body-content {
+  padding: 30px;
+}
+
+.cartoon-horoscopo .second-horoscopo ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 15px;
+}
+
+.second-horoscopo .body-content ul img {
+  width: 50px;
+  filter: invert(21%) sepia(91%) saturate(5554%) hue-rotate(327deg)
+    brightness(98%) contrast(105%);
+}
+
+.second-horoscopo .body-content .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-horoscopo .body-content .icon .name{
+  color: var(--black-color);
+}
+
+.second-horoscopo .body-content .icon .name::first-letter{
+  text-transform: uppercase;
+}
+
+.webstories-survey{
+  margin-top: 30px;
+  width: 88%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.webstories{
+  width: 100%;
+
+}
+.webstories .title{
+  padding:30px 30px;
+  color: var(--black-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.webstories .stories-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  gap: 10px;
+  
+}
+
+.webstories .stories-container .storie{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+}
+
+.webstories .stories-container .storie .img{
+  width: 75px;
+  height: 75px;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.webstories .stories-container .storie img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.webstories .stories-container .storie .infos{
+  width: 40%;
+  padding-left: 10px;
+  color: var(--black-color);
+  font-weight: 800;
+}
+
+.eight-news{
+  width: 100%;
+  height: 100%;
+}
+
+.eight-news .news-right{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eight-news .news-right .card{
+  display: flex;
+  flex-direction: row;
+}
+
+.survey {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow-1);
+}
+
+form{
+  margin-bottom: 30px;
+}
+
+.survey .head-content{
+  padding: 30px;
+}
+
+.survey .survey-subtitle{
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.survey-subtitle::first-letter{
+  text-transform: uppercase;
+}
+
+.survey-title{
+  margin-top: 30px;
+  color: var(--black-color);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.survey-title::first-letter{
+  text-transform: uppercase;
+}
+
+.survey .body-content{
+  padding: 0px 30px;
+}
+
+.radio-group{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.radio{
+  font-size: 1.2rem;
+  font-weight: 400;
+  vertical-align: middle;
+  color: var(--black-color);
+  position: relative;
+  padding-left: 50px;
+}
+
+.radio input[type="radio"]{
+  display: none;
+}
+
+.radio span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  display: block;
+  cursor: pointer;
+  
+}
+
+.radio span::after{
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: bloc10;
+  background: var(--primary-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 250ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span::after{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.survey form button{
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: var(--border-radius-1);
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.news-to-news{
+  width: 88%;
+
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+.news-to-news .nine-news{
+  width: 100%;
+  height: 100%;
+}
+
+.news-to-news .ads{
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.news-to-news .card-news{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.news-to-news .card-news .interactive-buttons{
+
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.news-to-news .card-news .interactive-buttons .button{
+  margin:  5%;
+}
+
+.news-to-news .card-news .text-card{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  z-index: 2;
+}
+
+.news-to-news .card-news .text-card .body .category{
+  color: var(--white-color);
+}
+
+.news-to-news .card-news .text-card .body{
+  color: var(--white-color);
+  font-weight: 600;
+  width: 93%;
+}
+
+.news-to-news .card-news .img-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.news-to-news .card-news .img-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--black-color));
+  border-radius: var(--border-radius-1);
+}
+
+.news-to-news .card-news .img-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-1);
 }
