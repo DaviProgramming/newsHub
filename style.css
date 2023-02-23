@@ -889,9 +889,14 @@ section.second-news .ads img{
 }
 
 section.second-news .form{
-  background: var(--white-color-2);
+  
   width: 100%;
   height: 100%;
+
+}
+
+section.second-news form{
+  background: var(--white-color-2);
   border-radius: var(--border-radius-1);
   
 }
@@ -942,7 +947,7 @@ section.second-news .form .form-control input{
   background: transparent;
   outline: none;
   border: none;
-  width: 92%;
+  width: 82%;
   height: 100%;
 }
 
@@ -950,4 +955,36 @@ section.second-news .form  span{
   font-size: 1.3rem;
   color: var(--black-color);
   font-weight: 600;
+}
+
+section.second-news .form .form-control button{
+  border: 1px solid var(--white-color);
+  width: 35px;
+  height: 35px;
+  background: var(--grey-color);
+  border-radius: var(--border-radius-2);
+  box-shadow: var(--box-shadow-1);
+  color: var(--white-color);
+}
+
+section.second-news .form span.sucess{
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+section.second-news .form .card .img-card{
+  margin-right: 10px;
+}
+
+section.second-news .form .card .img-card img{
+  width: 75px;
+  height: 75px;
+  border-radius: var(--border-radius-1);
+}
+
+section.second-news .form .card .body{
+  color: var(--black-color);
+  font-size: 0.8rem;
 }
