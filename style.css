@@ -2325,7 +2325,22 @@ footer .navbar-texts li a {
 
   .news-football{
     grid-template-columns: repeat(1,1fr);
+    
   }
+
+  .news-football .news{
+    width: 100%;
+    height: max-content;
+    margin: 30px;
+    gap: 30px;
+  }
+
+  .news-football .football-gadget .body-content{
+    padding: 50px
+  }
+
+  .football-gadget .scoreboard {
+    grid-template-columns: repeat(3, 0.315fr);  }
 }
 
 
