@@ -2230,6 +2230,96 @@ footer .navbar-texts li a {
     object-fit: cover;
     
   }
-  
 
+  section.second-news .columns-form .card{
+    display: none;
+  }
+  
+  .horoscopo{
+    margin: 0;
+    width: 90%;
+  }
+
+  .third-news .body-content{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .category{
+    font-size: 1.2rem
+  }
+
+  .third-news .body{
+    font-size: 1.5rem;
+  }
+
+  .third-news .second-news .img-card{
+    height: 12vh;
+    width: 40vw;
+  }
+  .third-news ul{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .second-videos .header-content{
+    flex-direction: column;
+  }
+
+  .second-videos .nav{
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .second-videos ul{
+    white-space: nowrap;
+  }
+
+  .second-videos .nav  li{
+    font-size: 1.3rem;
+  }
+
+  .second-videos .body-content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .second-videos .body-content .left{
+    width: 100%;
+  }
+
+  .second-videos .left > .card, .right > .card{
+    width: max-content;
+  }
+  .second-videos .body-content .left .text-video{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 20px;
+    bottom: 0;
+  }
+
+  .second-videos .body-content .left img{
+    width: 70vw;
+  }
+
+  .second-videos .body-content .videos-cards{
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .second-videos .right .videos-cards img{
+    width: 60vw;
+  }
+
+  .second-videos .card .body{
+    height: 100%;
+  }
+
+  .second-videos .right .card .body .text-video{
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.3rem;
+  }
 }
