@@ -192,7 +192,17 @@ nav .navbar-content {
 .navbar-content a.actived {
   color: var(--black-color);
   font-weight: 800;
-  border-bottom: 2px solid var(--primary-color);
+  position: relative;
+}
+
+.navbar-content a.actived::before{
+  content: '';
+  position: absolute;
+  width: 70%;
+  bottom: -10px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: var(--border-radius-1);
 }
 
 .hero {
@@ -1280,11 +1290,34 @@ section.second-news .form .card .body {
 }
 
 .second-videos .header-content ul li {
+  position: relative;
   font-weight: 300;
 }
 
 .second-videos .header-content ul li::first-letter {
   text-transform: uppercase;
+}
+
+.second-videos .header-content ul li.actived a{
+  position: relative;
+  font-weight: 700;
+}
+
+.second-videos .header-content ul li.actived{
+  width: 100%;
+  position: relative;
+}
+
+.second-videos .header-content ul li.actived a::after{
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  background: var(--white-color);
+  bottom: -10px;
+  left: 0;
+  border-radius: var(--border-radius-1);
+  
 }
 
 .second-videos .body-content {
@@ -2171,6 +2204,7 @@ footer .navbar-texts li a {
   nav .navbar-content {
     margin-top: 30px;
     overflow-x: auto;
+    overflow-y: hidden;
     height: max-content;
     padding: 0px 40px;
   }
@@ -2260,6 +2294,7 @@ footer .navbar-texts li a {
     height: max-content;
     gap: 20px;
     overflow-x: scroll;
+    overflow-y: hidden;
   }
 
   .container.second-videos .header-content {
