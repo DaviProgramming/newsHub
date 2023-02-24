@@ -2044,9 +2044,9 @@ form {
 
 button.load {
   position: relative;
-  margin: 0px 540px;
-  left: 50%;
-  right: 50%;
+  
+  left: 52%;
+  
   transform: translate(-50%, -50%);
   margin-top: 30px;
   margin-bottom: 50px;
