@@ -504,7 +504,7 @@ article.hero .article-content > .interactive-buttons.hero .button {
 }
 
 .main-content .body {
-  color: var(--black-color);
+  color: var(--grey-color);
   font-size: 0.9rem;
   font-weight: 600;
 }
