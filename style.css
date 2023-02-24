@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+ul{
+  list-style: none;
+}
+
 body {
   font-family: var(--font-family);
   background: var(--white-color);
@@ -245,6 +249,7 @@ article.hero .article-content > .interactive-buttons.hero {
 article.hero .article-content > .interactive-buttons.hero .button {
   width: 70px;
   height: 20px;
+  z-index: 3;
 }
 
 .interactive-buttons a {
@@ -1761,7 +1766,13 @@ section.second-news .form .card .body {
   width: 100%;
   padding-left: 30px;
   padding-bottom: 30px;
-  gap: 10px;
+
+}
+
+.stories-container ul{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .webstories .stories-container .storie {
