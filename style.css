@@ -2490,6 +2490,21 @@ footer .navbar-texts li a {
     grid-template-columns: repeat(1,1fr);
   }
 
+  .eight-news{
+    padding-left: 30px;
+  }
+
+  .news-to-news .nine-news .card{
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .navbar-texts{
+    width: 88%;
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
