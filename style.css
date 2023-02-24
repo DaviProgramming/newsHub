@@ -2176,7 +2176,7 @@ footer .navbar-texts li a {
   }
 
   .header-news {
-    padding: 125px 50px;
+    padding: 125px 60px;
     width: 100%;
   }
 
@@ -2216,6 +2216,10 @@ footer .navbar-texts li a {
     height: max-content;
     gap: 20px;
     overflow-x: scroll;
+  }
+
+  .container.second-videos .header-content{
+    overflow: hidden;
   }
 
   .first-news .left > .card,
@@ -2265,6 +2269,7 @@ footer .navbar-texts li a {
   .news-right .card .card-text .body {
     width: 80%;
     font-size: 1.4rem;
+    color: var(--black-color);
   }
 
   .main-content .right {
@@ -2301,7 +2306,8 @@ footer .navbar-texts li a {
 
   section.second-news .news-card {
     width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
   section.second-news .news-card .img-card img {
     width: 70vw;
@@ -2339,6 +2345,19 @@ footer .navbar-texts li a {
   .category {
     font-size: 1.2rem;
     
+  }
+
+  .container.videos .header-content{
+    overflow: hidden;
+  }
+
+  section.videos .videos-cards{
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  section.videos .card img{
+    width: 70vw;
   }
 
   .second-news ul .card .category{
@@ -2379,6 +2398,10 @@ footer .navbar-texts li a {
     white-space: nowrap;
   }
 
+  .second-videos .header-content{
+    padding: 30px 0px;
+  }
+
   .second-videos .nav li {
     font-size: 1.3rem;
   }
@@ -2395,6 +2418,11 @@ footer .navbar-texts li a {
   .right > .card {
     width: max-content;
   }
+
+  .second-videos .body-content{
+    padding: 0;
+  }
+
   .second-videos .body-content .left .text-video {
     width: 100%;
     font-size: 1.5rem;
@@ -2419,6 +2447,8 @@ footer .navbar-texts li a {
   .second-videos .card .body {
     height: 100%;
   }
+
+  
 
   .second-videos .right .card .body .text-video {
     bottom: 20px;
@@ -2499,15 +2529,36 @@ footer .navbar-texts li a {
     flex-direction: row;
   }
 
-  footer .navbar-texts{
-    width: 88%;
-    overflow: scroll;
-    overflow-y: hidden;
+  .ten-news .body{
+    font-size: 1.5rem;
+    color: var(--black-color);
+  }
+
+  footer .navbar-texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 700;
+    gap: 30px;
+  }
+
+  footer .navbar-texts li:nth-child(even){
+    display: none;
   }
 
 }
 
 @media screen and (max-width: 576px) {
+
+  .header-news {
+    padding: 125px 30px;
+    width: 100%;
+  }
+
+  .hero .others-news ul{
+    padding: 0 35px;
+  }
+
   .container {
     padding: 30px;
   }
@@ -2522,6 +2573,7 @@ footer .navbar-texts li a {
     width: 90%;
     font-size: 1rem;
   }
+
 
   .second-videos .right .card .body .text-video{
     left: 0px;
