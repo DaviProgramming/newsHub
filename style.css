@@ -2322,4 +2322,15 @@ footer .navbar-texts li a {
     left: 20px;
     font-size: 1.3rem;
   }
+
+  .news-football{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
+@media screen and (max-width: 576px){
+    .container{
+      padding: 30px;
+    }
 }
