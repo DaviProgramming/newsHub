@@ -1809,7 +1809,7 @@ section.second-news .form .card .body {
 .stories-container ul{
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
 }
 
 .webstories .stories-container .storie {
