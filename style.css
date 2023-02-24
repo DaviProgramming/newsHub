@@ -2094,6 +2094,18 @@ footer .navbar-texts li a {
 }
 
 @media screen and (max-width: 780px) {
+
+  nav .navbar-content{
+    margin-top: 30px;
+    overflow-x: auto;
+    height: max-content;
+  }
+  .navbar-content .navbar-texts{
+    gap: 30px;
+  }
+  nav .navbar-content li a{
+    font-size: 1.5rem;
+  }
   .hero .article-content {
     left: 0;
     width: 100%;
@@ -2126,9 +2138,18 @@ footer .navbar-texts li a {
   }
 
   .container .header-content {
-    flex-direction: column;
+    
     height: max-content;
     gap: 20px;
+    overflow-x: scroll;
+  }
+
+  .first-news .left > .card, .first-news .right > .card{
+    width: 100%;
+  }
+
+  .first-news .card > img{
+    width: 80vw;
   }
 
   .header-content .right {
@@ -2185,15 +2206,30 @@ footer .navbar-texts li a {
   }
 
   section.second-news .news-card{
-    width: 96%;
+    width: 100%;
     overflow: scroll;
   }
   section.second-news .news-card .img-card img{
     width: 70vw;
+    height: 100%;
   }
 
   section.second-news .columns-form{
+    width: 96%;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  section.second-news .columns-form .ads {
+    height: 100%;
+    
+  }
+
+  section.second-news .columns-form .ads img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
 
 }
