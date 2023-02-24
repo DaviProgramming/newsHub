@@ -2102,10 +2102,13 @@ footer .navbar-texts li a {
 @media screen and (max-width: 780px) {
   .header-container {
     padding: 0;
+   
+   
   }
 
   header ul {
     padding: 0px 60px;
+    gap: 50px;
   }
 
   header ul li.left .button:last-child,
@@ -2114,7 +2117,10 @@ footer .navbar-texts li a {
   }
 
   header ul li.left {
+    width: 50%;
     order: 2;
+    gap: 20px;
+   
   }
 
   header ul li {
@@ -2129,6 +2135,7 @@ footer .navbar-texts li a {
     margin-top: 30px;
     overflow-x: auto;
     height: max-content;
+    padding: 0px 40px;
   }
   .navbar-content .navbar-texts {
     gap: 30px;
