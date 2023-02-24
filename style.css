@@ -104,7 +104,7 @@ button,
 .play-button i,
 header ul li.left .uil-bars,
 a.button,
-.ads, .nav span {
+.ads, .nav span, .group span {
   cursor: pointer;
 }
 
@@ -2098,6 +2098,10 @@ footer .navbar-texts li a {
 
  .card .body{
   color: var(--grey-color);
+}
+
+.container.second-news .news-card  .body{
+  color: var(--white-color);
 }
 
 @media screen and (max-width: 1200px) {
