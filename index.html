@@ -27,8 +27,9 @@
       <li class="right">
         <form>
           <div class="form-control">
+           
             <input type="text" name="searchHeader" id="searchHeader" />
-            <button class="search"><i class="uil uil-search"></i></button>
+            <label for="searchHeader"><button name="buttonSearch" class="search"><i class="uil uil-search"></i></button></label>
           </div>
         </form>
       </li>
@@ -326,14 +327,14 @@
           LOGO
         </div>
         <div class="buttons">
-          <button class="active">vídeos</button>
-          <button>shorts</button>
+          <button name="buttonVideos" class="active">vídeos</button>
+          <button name="buttonShorts">shorts</button>
         </div>
       </div>
       <div class="videos-cards">
         <div class="card">
           <div class="img-card">
-            <button class="play"><i class="uil uil-play"></i></button>
+            <button name="buttonPlay" class="play"><i class="uil uil-play"></i></button>
             <img src="./Assets/arquitetura.jpg" alt="" />
           </div>
           <div class="text-card">
@@ -342,7 +343,7 @@
         </div>
         <div class="card">
           <div class="img-card">
-            <button class="play"><i class="uil uil-play"></i></button>
+            <button name="buttonPlay" class="play"><i class="uil uil-play"></i></button>
             <img src="./Assets/arquitetura.jpg" alt="" />
           </div>
           <div class="text-card">
@@ -351,7 +352,7 @@
         </div>
         <div class="card">
           <div class="img-card">
-            <button class="play"><i class="uil uil-play"></i></button>
+            <button name="buttonPlay" class="play"><i class="uil uil-play"></i></button>
             <img src="./Assets/arquitetura.jpg" alt="" />
           </div>
           <div class="text-card">
@@ -578,14 +579,14 @@
               <div class="form-control">
                 <input type="text" name="input" id="newsletterInputWhatsapp"
                   placeholder="Digite seu Whatsapp com DDD" />
-                <button type="button">
+                <button name="buttonSend" type="button">
                   <i class="fa-regular fa-paper-plane"></i>
                 </button>
               </div>
               <span>ou</span>
               <div class="form-control">
                 <input type="text" name="input" id="newsletterInputEmail" placeholder="Digite seu e-mail" />
-                <button type="button">
+                <button name="buttonSend" type="button">
                   <i class="fa-regular fa-paper-plane"></i>
                 </button>
               </div>
@@ -1345,7 +1346,7 @@
                 </label>
               </div>
             </div>
-            <button>Enviar</button>
+            <button name="buttonSendSurvey">Enviar</button>
           </form>
         </div>
       </article>
@@ -1471,7 +1472,7 @@
         </div>
       </article>
     </section>
-    <button class="load">Carregar mais</button>
+    <button name="buttonLoad" class="load">Carregar mais</button>
   </main>
 
   <footer>
