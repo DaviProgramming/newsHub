@@ -97,7 +97,10 @@ ul li.left .button {
 
 .button,
 button,
-.play-button i {
+.play-button i,
+header ul li.left .uil-bars,
+a.button,
+.ads, .nav span {
   cursor: pointer;
 }
 
@@ -113,13 +116,16 @@ ul li.center {
 
 ul li.right {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+
+  align-items: center;
   margin-right: 30px;
 }
 
+header form {
+  margin-bottom: 0;
+}
+
 ul li.right .form-control {
-  width: 50%;
   padding: 5px 10px;
   display: flex;
   justify-content: center;
@@ -633,6 +639,11 @@ article.hero .article-content > .interactive-buttons.hero .button {
   align-items: center;
 }
 
+.ads a {
+  display: flex;
+  justify-content: center;
+}
+
 .ads img {
   width: 60%;
   height: auto;
@@ -780,7 +791,7 @@ section.second-news .more-reads .title {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.more-reads li {
+.more-reads li a {
   margin-top: 20px;
   margin-right: 0px;
   width: 100%;
@@ -789,7 +800,7 @@ section.second-news .more-reads .title {
   gap: 10px;
 }
 
-.more-reads li .number {
+.more-reads li a .number {
   padding: 0px 10px;
   height: 40px;
   background: var(--grey-color-2);
@@ -802,7 +813,7 @@ section.second-news .more-reads .title {
   color: var(--primary-color);
 }
 
-.more-reads li .text {
+.more-reads li a .text {
   width: 90%;
   color: var(--black-color);
   font-size: 0.9rem;
@@ -1227,7 +1238,7 @@ section.second-news .form .card .body {
   height: auto;
 }
 
-.third-news .second-news .card{
+.third-news .second-news .card {
   align-items: flex-start;
 }
 
@@ -1647,6 +1658,11 @@ section.second-news .form .card .body {
   flex-direction: column;
 }
 
+.jornal a{
+  display: flex;
+  justify-content: center;
+}
+
 .cartoon-horoscopo .jornal .title {
   margin: 30px 0px;
   display: flex;
@@ -2064,6 +2080,11 @@ footer .navbar-texts li a {
   color: var(--black-color);
 }
 
+
+ .card .body{
+  color: var(--grey-color);
+}
+
 @media screen and (max-width: 1200px) {
   .header-content .news .left {
     width: 100vw;
@@ -2099,11 +2120,9 @@ footer .navbar-texts li a {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 840px) {
   .header-container {
     padding: 0;
-   
-   
   }
 
   header ul {
@@ -2120,7 +2139,6 @@ footer .navbar-texts li a {
     width: 50%;
     order: 2;
     gap: 20px;
-   
   }
 
   header ul li {
@@ -2225,7 +2243,7 @@ footer .navbar-texts li a {
     overflow-x: scroll;
   }
 
-  .container.second-videos .header-content{
+  .container.second-videos .header-content {
     overflow: hidden;
   }
 
@@ -2283,7 +2301,7 @@ footer .navbar-texts li a {
     display: none;
   }
 
-  .main-content .news-right .card{
+  .main-content .news-right .card {
     align-items: flex-start;
   }
 
@@ -2302,7 +2320,7 @@ footer .navbar-texts li a {
     width: 90%;
   }
 
-  .card > .text .text-body{
+  .card > .text .text-body {
     font-size: 1.2rem;
   }
 
@@ -2351,25 +2369,24 @@ footer .navbar-texts li a {
 
   .category {
     font-size: 1.2rem;
-    
   }
 
-  .container.videos .header-content{
+  .container.videos .header-content {
     overflow: hidden;
   }
 
-  section.videos .videos-cards{
+  section.videos .videos-cards {
     overflow-x: scroll;
     overflow-y: hidden;
   }
 
-  section.videos .card img{
+  section.videos .card img {
     width: 70vw;
   }
 
-  .second-news ul .card .category{
+  .second-news ul .card .category {
     margin: 0;
-    margin-bottom:  10px ;
+    margin-bottom: 10px;
   }
 
   .third-news .body {
@@ -2377,8 +2394,13 @@ footer .navbar-texts li a {
     color: var(--black-color);
   }
 
-  .third-news .card-news .text-card .body{
+  .third-news .card-news .text-card .body {
     font-size: 1.1rem;
+  }
+
+  .more-reads li a {
+    justify-content: center;
+    align-items: center;
   }
 
   .third-news .second-news .img-card {
@@ -2405,7 +2427,7 @@ footer .navbar-texts li a {
     white-space: nowrap;
   }
 
-  .second-videos .header-content{
+  .second-videos .header-content {
     padding: 30px 0px;
   }
 
@@ -2426,7 +2448,7 @@ footer .navbar-texts li a {
     width: max-content;
   }
 
-  .second-videos .body-content{
+  .second-videos .body-content {
     padding: 0;
   }
 
@@ -2455,15 +2477,11 @@ footer .navbar-texts li a {
     height: 100%;
   }
 
-  
-
   .second-videos .right .card .body .text-video {
     bottom: 20px;
     left: 20px;
     font-size: 1.3rem;
   }
-
-  
 
   .news-football {
     grid-template-columns: repeat(1, 1fr);
@@ -2484,61 +2502,72 @@ footer .navbar-texts li a {
     grid-template-columns: repeat(3, 0.315fr);
   }
 
-  .football-gadget .time{
+  .football-gadget .time {
     margin: 20px 0px;
   }
 
-  .news-football .news .card{
+  .news-football .news .card {
     grid-template-columns: 0.1fr 1fr;
     place-items: start;
   }
 
-  .news-football .news .card-text{
+  .news-football .news .card-text {
     width: 100%;
     text-align: start;
   }
-  
-  .news-football .news .body{
+
+  .news-football .news .body {
     width: 80%;
     font-size: 1.4rem;
     color: var(--black-color);
   }
 
-  .cartoon-horoscopo{
-    grid-template-columns: repeat(1,1fr);
+  .webstories .stories-container .storie .infos{
+    width: 71%;
+ 
+  }
+
+  .cartoon-horoscopo {
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 
-  .cartoon-horoscopo .cartoon, .cartoon-horoscopo .jornal, .cartoon-horoscopo .second-horoscopo{
+  .cartoon-horoscopo .cartoon,
+  .cartoon-horoscopo .jornal,
+  .cartoon-horoscopo .second-horoscopo {
     width: 88%;
   }
 
-  .cartoon-horoscopo .second-horoscopo .body-content{
+  .cartoon-horoscopo .second-horoscopo .body-content {
     padding: 0;
   }
 
-  .webstories-survey{
-    grid-template-columns: repeat(1,1fr);
+  .webstories-survey {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .survey{
+  .survey {
     width: 90%;
   }
 
-  .news-to-news{
-    grid-template-columns: repeat(1,1fr);
+  .news-to-news {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .eight-news{
+  .eight-news {
     padding-left: 30px;
   }
 
-  .news-to-news .nine-news .card{
+  .news-to-news .nine-news .card {
     display: flex;
     flex-direction: row;
   }
 
-  .ten-news .body{
+  .news-to-news .ads{
+    width: 90%;
+  }
+
+  .ten-news .body {
     font-size: 1.5rem;
     color: var(--black-color);
   }
@@ -2551,20 +2580,18 @@ footer .navbar-texts li a {
     gap: 30px;
   }
 
-  footer .navbar-texts li:nth-child(even){
+  footer .navbar-texts li:nth-child(even) {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 576px) {
-
   .header-news {
     padding: 125px 30px;
     width: 100%;
   }
 
-  .hero .others-news ul{
+  .hero .others-news ul {
     padding: 0 35px;
   }
 
@@ -2572,32 +2599,29 @@ footer .navbar-texts li a {
     padding: 30px;
   }
 
-  .football-gadget .scoreboard{
+  .football-gadget .scoreboard {
     grid-template-columns: repeat(3, 0.3fr);
   }
 
-  
-
-  .second-videos .body-content .left .text-video{
+  .second-videos .body-content .left .text-video {
     width: 90%;
     font-size: 1rem;
   }
 
-
-  .second-videos .right .card .body .text-video{
+  .second-videos .right .card .body .text-video {
     left: 0px;
-    width:90%;
+    width: 90%;
     font-size: 0.8rem;
   }
 
-  .webstories .title{
+  .webstories .title {
     padding: 30px 10px;
   }
 
-  .webstories .stories-container{
+  .webstories .stories-container {
     padding-left: 0px;
   }
-  .eight-news{
+  .eight-news {
     padding-left: 0px;
   }
 }
