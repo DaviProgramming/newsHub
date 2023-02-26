@@ -16,6 +16,17 @@
 
   --border-radius-1: 20px;
   --border-radius-2: 50%;
+  
+  --margin-1: 5px;
+  --margin-2: 20px;
+  --margin-3: 30px;
+  
+
+  --padding-1: 20px;
+
+  --gap-1: 20px;
+  --gap-2: 10px;
+  --gap-3: 5px;
 
   --box-shadow-1: 0px 5px 15px -9px var(--grey-color);
 }
@@ -406,7 +417,7 @@ article.hero .article-content > .interactive-buttons.hero .button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 45%, black 100%);
+  background: linear-gradient(to bottom, transparent 45%, var(--black-color) 100%);
   border-radius: var(--border-radius-1);
 }
 
@@ -439,6 +450,37 @@ article.hero .article-content > .interactive-buttons.hero .button {
 
 .text-body::first-letter {
   text-transform: uppercase;
+}
+
+.nav-carousel{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+
+}
+
+.nav-carousel .arrows{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-carousel .arrows .arrow-left, .nav-carousel .arrows .arrow-right{
+  background: var(--white-color);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--black-color);
+  margin: 0px 10px;
+  cursor: pointer;
 }
 
 .card > .interactive-buttons {
@@ -557,7 +599,7 @@ article.hero .article-content > .interactive-buttons.hero .button {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(10, minmax(25px, 1fr));
-  gap: 5px;
+  gap: var(--gap-3);;
   margin-bottom: 20px;
 }
 
@@ -687,7 +729,7 @@ section.videos .header-content {
 section.videos .buttons {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: var(--gap-3);
 }
 
 section.videos .header-content button {
@@ -717,7 +759,7 @@ section.videos .videos-cards {
   width: 88%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: var(--gap-1);
 }
 
 section.videos .card .img-card {
@@ -732,14 +774,14 @@ section.videos .card .img-card::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 70%, black 100%);
+  background: linear-gradient(to bottom, transparent 70%, var(--black-color) 100%);
   opacity: 1;
   border-radius: var(--border-radius-1);
 }
 
 section.videos .card img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: var(--border-radius-1);
   object-fit: cover;
 }
 
@@ -766,7 +808,7 @@ section.videos .channel {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: var(--gap-2);
 }
 
 section.videos .channel .logo {
@@ -815,7 +857,7 @@ section.second-news .more-reads .title {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: var(--gap-2);
 }
 
 .more-reads li a .number {
@@ -843,7 +885,7 @@ section.second-news .news-card {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: var(--gap-1);
 }
 
 section.second-news .news-card .card {
@@ -879,14 +921,14 @@ section.second-news .news-card .img-card::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 50%, black 100%);
+  background: linear-gradient(to bottom, transparent 50%, var(--black-color) 100%);
   border-radius: var(--border-radius-1);
 }
 
 section.second-news .news-card .img-card img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: var(--border-radius-1);
   object-fit: cover;
 }
 
@@ -914,7 +956,7 @@ section.second-news .columns-form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  gap: 20px;
+  gap: var(--gap-1);
 }
 
 section.second-news .columns-form .column {
@@ -1015,7 +1057,7 @@ section.second-news .form .form-body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  gap: 10px;
+  gap: var(--gap-2);
 }
 
 section.second-news .form .form-control {
@@ -1147,7 +1189,7 @@ section.second-news .form .card .body {
 .third-news .body-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  gap:var(--gap-2);
 }
 
 .third-news .column-title {
@@ -1181,7 +1223,7 @@ section.second-news .form .card .body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 70%, black);
+  background: linear-gradient(to bottom, transparent 70%, var(--black-color));
   opacity: 1;
   border-radius: var(--border-radius-1);
 }
@@ -1229,7 +1271,7 @@ section.second-news .form .card .body {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  gap: 20px;
+  gap: var(--gap-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1349,7 +1391,7 @@ section.second-news .form .card .body {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(to bottom, transparent 50%, black);
+  background: linear-gradient(to bottom, transparent 50%, var(--black-color));
   border-radius: var(--border-radius-1);
 }
 
@@ -1397,7 +1439,7 @@ section.second-news .form .card .body {
   height: max-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: var(--gap-2);
   padding-left: 20px;
 }
 
@@ -1419,7 +1461,7 @@ section.second-news .form .card .body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 30%, black 100%);
+  background: linear-gradient(to bottom, transparent 30%, var(--black-color) 100%);
   border-radius: 20px;
   opacity: 0.9;
 }
@@ -1500,7 +1542,7 @@ section.second-news .form .card .body {
   grid-template-columns: repeat(2, 0.1fr 1fr);
   place-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: var(--gap-2);
 }
 
 .news-football .news .card img {
@@ -1543,7 +1585,7 @@ section.second-news .form .card .body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 20px;
+  gap: var(--gap-1);
 }
 
 .football-gadget .group span {
@@ -1568,7 +1610,7 @@ section.second-news .form .card .body {
   display: grid;
   grid-template-columns: repeat(3, 0.3fr);
   place-items: center;
-  gap: 5px;
+  gap: var(--gap-3);;
   margin: auto;
 }
 
@@ -1576,7 +1618,7 @@ section.second-news .form .card .body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap:var(--gap-2);
 }
 
 .football-gadget .scoreboard .home-team,
@@ -1585,7 +1627,7 @@ section.second-news .form .card .body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: var(--gap-1);
 }
 
 .football-gadget .scoreboard .team-name {
@@ -1623,7 +1665,7 @@ section.second-news .form .card .body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: var(--gap-1);;
 }
 
 .cartoon-horoscopo .cartoon {
@@ -1782,7 +1824,7 @@ section.second-news .form .card .body {
   width: 88%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: var(--gap-1);;
 }
 
 .webstories {
@@ -1808,7 +1850,7 @@ section.second-news .form .card .body {
 .stories-container ul{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--gap-1);
 }
 
 .webstories .stories-container .storie {
@@ -1904,7 +1946,7 @@ form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--gap-1);;
 }
 
 .radio {
@@ -2087,7 +2129,7 @@ footer .social-medias ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: var(--gap-1);;
 }
 
 footer .social-medias li {
@@ -2120,7 +2162,7 @@ footer .navbar-texts {
   margin: 30px 0px;
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: var(--gap-1);
 }
 
 footer .navbar-texts li a {
@@ -2147,7 +2189,7 @@ footer .navbar-texts li a {
 
   .main-content {
     flex-direction: column;
-    gap: 20px;
+    gap: var(--gap-1);;
   }
   .main-content .left {
     width: 93%;
@@ -2189,7 +2231,7 @@ footer .navbar-texts li a {
   header ul li.left {
     width: 50%;
     order: 2;
-    gap: 20px;
+    gap: var(--gap-1);;
   }
 
   header ul li {
@@ -2291,7 +2333,7 @@ footer .navbar-texts li a {
 
   .container .header-content {
     height: max-content;
-    gap: 20px;
+    gap: var(--gap-1);;
     overflow-x: scroll;
     overflow-y: hidden;
   }
@@ -2646,6 +2688,14 @@ footer .navbar-texts li a {
 
   .hero .others-news ul {
     padding: 0 35px;
+  }
+
+  section.videos .buttons{
+    width: 70%;
+  }
+
+  section.videos .header-content{
+    align-items: center;
   }
 
   .container {
